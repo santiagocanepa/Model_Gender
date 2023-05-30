@@ -6,6 +6,7 @@ Este proyecto de Python se centra en la predicción del género a partir de nomb
 
 El proyecto utiliza técnicas de procesamiento de lenguaje natural y un modelo de clasificación Naive Bayes para predecir el género en base a nombres de usuario. Se implementa un proceso de ingesta y clasificación manual de datos para entrenar el modelo, y se utiliza una técnica de aumento de datos para mejorar la robustez del mismo.
 
+## Compatible con instabot o cualquier automatización para redes sociales. 
 ## 🛠️ Estructura de los Archivos
 
 - `__init__.py`: Este es un archivo requerido para que Python trate los directorios como que contienen paquetes.
