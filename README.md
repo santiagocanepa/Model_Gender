@@ -1,38 +1,33 @@
-# Predicción de Género en Base a Nombres - Python
+# Gender Prediction Based on Names - Python
+This Python project focuses on gender prediction from names using machine learning techniques.
 
-Este proyecto de Python se centra en la predicción del género a partir de nombres utilizando técnicas de aprendizaje automático.
+# 📄 Description**
+The project utilizes natural language processing techniques and a Naive Bayes classification model to predict gender based on usernames. It implements a data ingestion and manual classification process to train the model, and uses a data augmentation technique to enhance its robustness.
 
-## 📄 Descripción
+Compatible with instabot or any social media automation.
 
-El proyecto utiliza técnicas de procesamiento de lenguaje natural y un modelo de clasificación Naive Bayes para predecir el género en base a nombres de usuario. Se implementa un proceso de ingesta y clasificación manual de datos para entrenar el modelo, y se utiliza una técnica de aumento de datos para mejorar la robustez del mismo.
+# 🛠️ File Structure
+**init.py**: This is a required file for Python to treat directories as containing packages.
+**data_augmentation.py**: This script is responsible for augmenting the initial dataset by combining existing names to create new ones.
+**data_classification.py**: In this script, the names in the initial dataset are manually classified.
+**model.py**: This file contains the code for the machine learning model, which is a Naive Bayes classifier.
+**processing_data.py**: In this file, the dataset is processed for subsequent use in the model.
+**test.py**: This script uses the trained model to make inferences.
+**separator.py**: This script contains a function to obtain possible names from a username.
 
-## Compatible con instabot o cualquier automatización para redes sociales. 
-## 🛠️ Estructura de los Archivos
+# ⚙️ Installation
+Clone the repository on your local machine
 
-- `__init__.py`: Este es un archivo requerido para que Python trate los directorios como que contienen paquetes.
-- `data_augmentation.py`: Este script se encarga de aumentar el dataset inicial combinando los nombres existentes para crear nuevos nombres.
-- `data_classification.py`: En este script se clasifican los nombres en el dataset inicial de forma manual.
-- `model.py`: Este archivo contiene el código del modelo de aprendizaje automático, el cual es un clasificador Naive Bayes.
-- `processing_data.py`: En este archivo se procesa el dataset para su utilización posterior en el modelo.
-- `prueba.py`: Este script utiliza el modelo entrenado para hacer inferencias.
-- `separetor.py`: Este script contiene una función para obtener nombres posibles de un nombre de usuario.
 
-## ⚙️ Instalación
+**git clone https://github.com/santiagocanepa/gender_predictor**
+Navigate to the project directory
 
-1. Clone el repositorio en su máquina local
-```bash
-git clone https://github.com/santiagocanepa/predictor_genero
-
-Navegue hasta el directorio del proyecto
-
-cd ruta/al/directorio
-
-Instale las dependencias necesarias
+cd path/to/directory
+Install the necessary dependencies
 
 pip install -r requirements.txt
-Ejecute el script model.py para entrenar el modelo y prueba.py para hacer inferencias.
+Run the model.py script to train the model and test.py to make inferences.
 
-📃 Licencia
-Este proyecto está licenciado bajo los términos de la licencia MIT. Consulta el archivo LICENSE para más detalles.
-
+# 📃 License
+This project is licensed under the terms of the MIT license. See the LICENSE file for more details.
 
