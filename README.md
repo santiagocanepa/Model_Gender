@@ -1,33 +1,57 @@
-# Gender Prediction Based on Names - Python
-This Python project focuses on gender prediction from names using machine learning techniques.
 
-# 📄 Description**
-The project utilizes natural language processing techniques and a Naive Bayes classification model to predict gender based on usernames. It implements a data ingestion and manual classification process to train the model, and uses a data augmentation technique to enhance its robustness.
+# 🚀 Model_Gender
 
-Compatible with instabot or any social media automation.
+🔍 **Project Description**  
+This repository contains a gender classifier trained with over 50,000 male and female names. It uses XGBoost and OpenAI embeddings for predictions. You need to connect your OpenAI API, which costs approximately $0.01 per 30,000 names requested, making it practically free.
 
-# 🛠️ File Structure
-**init.py**: This is a required file for Python to treat directories as containing packages.
-**data_augmentation.py**: This script is responsible for augmenting the initial dataset by combining existing names to create new ones.
-**data_classification.py**: In this script, the names in the initial dataset are manually classified.
-**model.py**: This file contains the code for the machine learning model, which is a Naive Bayes classifier.
-**processing_data.py**: In this file, the dataset is processed for subsequent use in the model.
-**test.py**: This script uses the trained model to make inferences.
-**separator.py**: This script contains a function to obtain possible names from a username.
+---
 
-# ⚙️ Installation
-Clone the repository on your local machine
+## ⚙️ **Requirements**
 
+To run this project, you need to install the dependencies listed in `requirements.txt`. You can do this by running the following command:
 
-**git clone https://github.com/santiagocanepa/gender_predictor**
-Navigate to the project directory
-
-cd path/to/directory
-Install the necessary dependencies
-
+```bash
 pip install -r requirements.txt
-Run the model.py script to train the model and test.py to make inferences.
+```
 
-# 📃 License
-This project is licensed under the terms of the MIT license. See the LICENSE file for more details.
+---
 
+## 🚀 **Usage Instructions**
+
+1. **Install the requirements:**  
+   Run the `requirements.txt` file in a virtual environment if possible.
+
+2. **Start the local API:**  
+   Run `app.py` to launch a local API using Flask, where you can send requests with the words to be predicted:
+
+```bash
+python app.py
+```
+
+---
+
+## 📂 **Project Structure**
+
+- `app.py`: Launches the local API with Flask and calls `utils.py` to process each request.
+- `utils.py`: Receives the words, generates embeddings, and classifies with the `modelWordsPredict.pkl` model to determine if the word is a proper noun or a common noun. If it is a proper noun, it classifies the gender using `modelGenerosPredict.pkl`.
+
+---
+
+## 🗂️ **Included Files**
+
+- `modelWordsPredict.pkl`: Model to classify if the word is a proper noun or a common noun.
+- `modelGenerosPredict.pkl`: Model to predict gender in proper nouns.
+- `label_encoderWords.pkl`: Label encoder for the word model.
+- `label_encoderGeneros.pkl`: Label encoder for the gender model.
+
+---
+
+## 📜 **License**
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+---
+
+### 📧 **Contact**
+
+If you have questions or suggestions, feel free to open an issue or contact the project maintainer.
