@@ -44,6 +44,8 @@ python app.py
 - `label_encoderWords.pkl`: Label encoder for the word model.
 - `label_encoderGeneros.pkl`: Label encoder for the gender model.
 
+To observe the training of the models visit the jupyter notebook on kaggle https://www.kaggle.com/code/ivancanepa/model-gender-classifier
+
 ---
 
 ## 📜 **License**
